@@ -1,7 +1,9 @@
 /* main elements */
-h1 {
+.header{
   font-family: "Montserrat", sans-serif;
   color: #d72e2a;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h2 {
@@ -12,7 +14,29 @@ h2 {
 h3 {
   font-family: "Montserrat", sans-serif;
   color: #1f4283;
-  padding-left: 15px;
+  padding-left: 5px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #1f4283;
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #4c689c;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 16px;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #1c3b76;
+  padding-left: 5px;
+  font-size: 14px;
 }
 
 body {

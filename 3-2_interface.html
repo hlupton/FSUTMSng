@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FSUTMS NextGen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fsutms.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <div class="sidenav">
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <a href="index.html">Home</a>
+    <!-- <a href="1_data.html">Data</a> -->
+    <button class="dropdown-btn">Data<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-container">
+      <a href="#">Data Home</a>
+      <a href="#">Data Inputs</a>
+      <a href="#">Data Repository</a>
+      <a href="#">Analytical Tools</a>
+  </div>
+  <button class="dropdown-btn">Model Tools<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="#">Traditional Practices</a>
+    <a href="#">Advanced Practices</a>
+    <a href="#">Supplemental Practices</a>
+  </div>
+  <button class="dropdown-btn">Interface<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="#">Institutional Support</a>
+    <a href="3-2_interface.html">Documentation</a>
+    <a href="#">Presentation & Results Sharing</a>
+</div>
+</div>
+  </head>
+
+  <div class="main">
+    <div class="header">
+      <h1>FSUTMS<sup>NG</sup></h1></div>
+      <h2>Documentation</h2>
+      <h3>Model Calibration and Validation</h3>
+      <body>
+        <p>In February 2022, the Model Task Force adopted the validation guidance prepared for FDOT as part of the process of developing standards for FSUTMS. This document provides some needed specificity on guidelines for model validation and includes the following elements:</p>
+        <ul>
+          <li>The preferred model validation process, including considerations and best practices, types of validation checks, the use of targets and guidelines, the development of a model validation plan, and validation of model input data</li>
+          <li>The process of validating the demand components of trip based and activity based model</li>
+          <li>The validation process for highway and transit assignment</li>
+          <li>The process for temporal validation and sensitivity testing</li>
+        </ul>
+        <p>The validation guidance document does not distinguish among guidance for different stakeholders, such as model
+          developers, appliers, and reviewers. However, the NextGen technical team sees the value in providing specific guidance
+           for each of these groups even though there is significant overlap in the guidance. Therefore, the summary of the
+           validation guidelines is presented below for each group.</p>
+        <p>It is important to recognize that while the list of checks should be performed in all applicable cases, numeric targets should be treated as guidelines, not standards. The points below can be treated as a checklist of tasks to perform, but numeric guidelines are not pass/fail tests of model validity. See the validation guidance document for more information.</p>
+        <br />
+        <h4>Guidance for Model Developers</h4>
+        <h5>General</h5>
+        <ul>
+          <li>Develop a model validation plan prior to model development</li>
+          <li>Validate/check model input data</li>
+          <li>Validate all components of the model</li>
+          <li>Perform temporal and sensitivity testing</li>
+        </ul>
+        <br />
+        <h5>Comparisons of base year model results to observations</h5>
+        <h6>Trip Generation</h6>
+        <ul>
+          <li>Check number of trips per household for reasonableness</li>
+          <ul>
+            <li>9 to 12 if non-motorized trips are included</li>
+            <li>8 to 11 if non-motorized trips are excluded</li>
+        </ul>
+          <li>Percentages of trips by purpose</li>
+          <li>HBW attractions per employee: 1.2 to 1.5</li>
+        </ul>
+        <h6>Trip Distribution</h6>
+        <ul>
+          <li>Compare modeled average trip lengths by trip purpose to observed.</li>
+          <ul><li>Target: Modeled trip lengths by trip purpose within five percent of observed</li></ul>
+          <li>Compare trip length frequency distributions by trip purpose to observed.</li>
+          <ul><li>Target: Coincidence ratios by trip purpose of at least 70 percent</li></ul>
+          <li>Compare modeled and observed trip tables by purpose at a district level</li>
+          <li>Compare modeled and observed intrazonal trips by purpose.</li>
+          <ul><li>Target: Modeled percentages of intrazonal trips with three percentage points of observed</li></ul>
+        </ul>
+        <h6>Mode Choice</h6>
+        <ul>
+          <li>Create targets for observed trips by mode and purpose and compare model results for reasonable match</li>
+        </ul>
+        <h6>Time of Day</h6>
+        <ul>
+          <li>Compare modeled percentages of trips by time period for each trip purpose to observed percentages</li>
+        </ul>
+        <h6>Activity-based model components</h6>
+        <ul>
+          <li>Include all checks for trip-based components above, using tours rather than trips as appropriate.</li>
+          <li>Additional checks (compare to observed data, segmented by person/household characteristics)</li>
+          <ul><li>Percentages of workers who go to work and students who go to school</li></ul>
+          <ul><li>Percentages of people who do not travel</li></ul>
+          <ul><li>Simulated workplace locations (compare to employment)</li></ul>
+          <ul><li>Number of tours per person</li></ul>
+          <ul><li>Tour/activity durations</li></ul>
+          <ul><li>Stops per tour by activity type</li></ul>
+        </ul>
+        <h6>Highway Assignment</h6>
+        <ul>
+          <li>Compare modeled VMT on links with counts to observed VMT, summarized by functional class.</li>
+          <ul><li>Targets: Per Table 4 of guidance document</li></ul>
+          <li>Compare volumes on screenlines and cutlines to observed.</li>
+          <ul><li>Targets: Per Table 5 of guidance document</li></ul>
+          <li>Compute percentage RMSE between modeled and observed link volumes, summarizing by volume group.</li>
+          <ul><li>Targets: Per Table 6 of guidance document</li></ul>
+        </ul>
+        <h6>Transit Assignment</h6>
+        <ul>
+          <li>Compare modeled transit ridership to observed ridership, summarized by groups of routes.</li>
+          <li>Compare modeled transfer rates to observed.</li>
+          <li>Compare modeled volumes to observed for major transit rider subgroups</li>
+          <li>Compare modeled volumes on “major” screenlines to observed.</li>
+        </ul>
+        <br />
+        <h5>Temporal validation and sensitivity testing</h5>
+        <ul>
+          <li>If data are available, run model for a year prior to the base year, a year after the base year but before the present, or a year in the future and compare the results to the base year results for reasonableness.</li>
+          <li>Perform sensitivity tests consistent with the types of application for which the model is expected to be used.</li>
+          <ul><li>Changes in costs (auto operating/fares/tolls)</li></ul>
+          <ul><li>Changes in transit level of service</li></ul>
+          <ul><li>Changes in roadway capacity</li></ul>
+          <ul><li>Changes in auto ownership</li></ul>
+          <ul><li>Aging of the population</li></ul>
+          <ul><li>Brownfield development</li></ul>
+          <ul><li>Reallocation of population or employment within the region</li></ul>
+          <ul><li>Increased indidence of working at home</li></ul>
+        </ul>
+        <br />
+        <h4>Guidance for Model Appliers</h4>
+        <ul>
+          <li>Review model validation plan and validation documentation prior to model application.</li>
+          <li>Check model validation results (the checks listed above for model developers) with a focus on model components relevant to the application for which the model is being used</li>
+          <ul><li>Consider performing checks that may not have been done in the original validation.</li></ul>
+          <li>If appropriate, perform additional sensitivity testing specific to the application for which the model is being used.</li>
+        </ul>
+        <br />
+        <h4>Guidance for Model Reviewers</h4>
+        <ul>
+          <li>Review model validation plan and validation documentation prior to model application.</li>
+          <li>Check model validation results (the checks listed above for model developers).</li>
+          <ul><li>Consider performing checks that may not have been done in the original validation</li></ul>
+          <ul><li>Identify areas where the validation results may require further attention.</li></ul>
+          <ul><li>Consider performing additional temporal/sensitivity tests as appropriate</li></ul>
+        </ul>
+
+
+
+
+
+
+  <script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  </script>
+      </body>
+</div>
+</html>
