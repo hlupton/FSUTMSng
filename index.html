@@ -1,7 +1,73 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+  <head>
+    <title>FSUTMS NextGen</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/fsutms.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <div class="sidenav">
+      <img src="images/fsutms_white.png" width=180px />
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <a href="index.html">Home</a>
+    <!-- <a href="1_data.html">Data</a> -->
+    <button class="dropdown-btn">Data<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-container">
+      <a href="#">Data Home</a>
+      <a href="#">Data Inputs</a>
+      <a href="#">Data Repository</a>
+  </div>
+  </div>
+  </head>
+
+  <div class="main">
+    <div class="header">
+      <h1>FSUTMS NextGen</h1></div>
+      <body>
+        <p>FSUTMS has been the fundamental paradigm within which travel demand modeling in Florida has been practiced for the past four decades. The principal aim of FSUTMS has been to achieve a consensus within the
+          Florida modeling community as to the tools, techniques, and datasets that should be employed in travel demand modeling. This approach has contributed greatly to the sense of professional community that
+          Florida’s travel demand modelers enjoy.</p>
+        <p>Although the origins of FSUTMS are in configuring a single piece of software for use on a single mainframe computer in Tallahassee four decades ago, modelers in Florida have continued to acknowledge, by
+          the constant support and development of FSUTMS over the years,that the benefits of FSUTMS extend far beyond that. These benefits have included:</p>
+        <ul>
+          <li>Making data acquisition for models relatively cheap and easy,</li>
+          <li>Streamlining the model development process,</li>
+          <li>Availability of a training program that allow modelers to work with any model in the state,</li>
+          <li>Increasing knowledge sharing making it easier to apply lessons learned from one model to another, and</li>
+          <li>Agreement on model quality standards.</li>
+        </ul>
+        <p>As technological improvements in the field of travel demand modeling have increased significantly over the past two decades, different models in Florida have diverged from previously established standards. This has made it more difficult for modelers to take advantage of the benefits listed above. One example is that much of the material covered in the FSUTMS Comprehensive Modeling Workshop, which at one time was sufficient to allow any modeler to pick up and use any model in the state, is only relevant to certain models still adhering to traditional FSUTMS practices. Materials on more advanced topics that cover methods used in some of the state’s more sophisticated models are barely touched upon. It is time to revisit FSUTMS and update it to meet the needs of today’s transportation planners.</p>
+
+  <!--  <div class="grid-container">
+      <div class="grid-item">Data</div>
+      <div class="grid-item">Standards</div>
+      <div class="grid-item">Models</div>
+      <div class="grid-item">Platforms</div>
+      <div class="grid-item">Support</div>
+      <div class="grid-item">Misc</div> -->
+
+  <script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  </script>
+      </body>
+</div>
 </html>
