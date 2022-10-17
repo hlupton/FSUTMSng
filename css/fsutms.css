@@ -1,6 +1,18 @@
 /* main elements */
 h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #d72e2a;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
   color: #1f4283;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #1f4283;
+  padding-left: 15px;
 }
 
 body {
@@ -37,6 +49,7 @@ img {
   background-color: #1f4283;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -52,6 +65,7 @@ img {
   text-align: left;
   cursor: pointer;
   outline: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* On mouse-over */
