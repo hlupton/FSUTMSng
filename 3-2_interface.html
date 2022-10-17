@@ -31,7 +31,14 @@
   <button class="dropdown-btn">Interface<i class="fa fa-caret-down"></i></button>
   <div class="dropdown-container">
     <a href="#">Institutional Support</a>
-    <a href="3-2_interface.html">Documentation</a>
+    <button class="dropdown-btn">Documentation<i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-container">
+      <a href="#">Guidelines</a>
+      <a href="#">Data Inputs (from repository)</a>
+      <a href="3-2_interface.html">Validation Checks</a>
+      <a href="#">Forecast Reasonability Checks</a>
+      <a href="#">Online Access</a>
+  </div>
     <a href="#">Presentation & Results Sharing</a>
 </div>
 </div>
@@ -109,10 +116,101 @@
         <ul>
           <li>Compare modeled VMT on links with counts to observed VMT, summarized by functional class.</li>
           <ul><li>Targets: Per Table 4 of guidance document</li></ul>
+          <br />
+          <figcaption>Table 4. Guidelines for Percentage Difference Between Modeled and Observed VMT by Functional Class</figcaption>
+          <table>
+            <tr>
+              <th>Functional Class</th>
+              <th>Percentage VMT Difference</th>
+            </tr>
+            <tr>
+              <td>Freeways/Expressways</td>
+              <td class="num">7%</td>
+            </tr>
+            <tr>
+              <td>Principal Arterials</td>
+              <td class="num">10%</td>
+            </tr>
+            <tr>
+              <td>Minor Arterials</td>
+              <td class="num">15%</td>
+            </tr>
+            <tr class="last">
+              <td>Collectors</td>
+              <td class="num">20%</td>
+            </tr>
+            <tr>
+              <td>All Links</td>
+              <td class="num">2%</td>
+            </tr>
+          </table>
+          <br />
           <li>Compare volumes on screenlines and cutlines to observed.</li>
           <ul><li>Targets: Per Table 5 of guidance document</li></ul>
+          <br />
+          <figcaption>Table 5. Guidelines for Percentage Difference Between Modeled and Observed Screenline Volumes</figcaption>
+          <table>
+            <tr>
+              <th>Volume Range</th>
+              <th>Percentage Volume Difference</th>
+            </tr>
+            <tr>
+              <td>1 - 20,000</td>
+              <td class="num">45%</td>
+            </tr>
+            <tr>
+              <td>20,000 - 50,000</td>
+              <td class="num">30%</td>
+            </tr>
+            <tr>
+              <td>50,000 - 100,000</td>
+              <td class="num">25%</td>
+            </tr>
+            <tr>
+              <td>100,000 - 200,000</td>
+              <td class="num">20%</td>
+            </tr>
+            <tr class="last">
+              <td>200,000+</td>
+              <td class="num">15%</td>
+            </tr>
+          </table>
+          <br />
           <li>Compute percentage RMSE between modeled and observed link volumes, summarizing by volume group.</li>
           <ul><li>Targets: Per Table 6 of guidance document</li></ul>
+          <br />
+          <figcaption>Table 6. Guidelines for Percentage RMSE by Volume Group</figcaption>
+          <table>
+            <tr>
+              <th>Volume Range</th>
+              <th>Percentage Volume Difference</th>
+            </tr>
+            <tr>
+              <td>0 - 5,000</td>
+              <td class="num">100%</td>
+            </tr>
+            <tr>
+              <td>5,000 - 10,000</td>
+              <td class="num">45%</td>
+            </tr>
+            <tr>
+              <td>10,000 - 15,000</td>
+              <td class="num">35%</td>
+            </tr>
+            <tr>
+              <td>15,000 - 20,000</td>
+              <td class="num">30%</td>
+            </tr>
+            <tr>
+              <td>20,000 - 50,000</td>
+              <td class="num">25%</td>
+            </tr>
+            <tr class="last">
+              <td>50,000+</td>
+              <td class="num">20%</td>
+            </tr>
+          </table>
+          <br />
         </ul>
         <h6>Transit Assignment</h6>
         <ul>

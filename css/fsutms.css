@@ -52,18 +52,33 @@ img {
   padding-left: 20px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
+figcaption {
+  font-family: "Roboto", sans-serif;
+              font-style: italic;
+              padding: 5px 0px;
 }
-.grid-item {
-  background-color: #1f4283;
-  border: 2px solid white;
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
+
+table {
+
+  border-collapse: collapse;
+}
+
+th {
+  padding:0 20px 0 20px;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+}
+
+td {
+  padding:0 20px 0 20px;
+}
+
+td.num {
+  text-align: right;
+}
+
+tr.last {
+  border-bottom: 1px solid black;
 }
 
 /* The sidebar menu */
@@ -84,7 +99,7 @@ img {
 .sidenav a, .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   color: #f1f1f1;
   display: block;
   border: none;
@@ -106,7 +121,7 @@ img {
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   color: #f1f1f1;
   display: block;
 }
@@ -136,11 +151,11 @@ img {
 }
 
 .dropdown-container a {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .dropdown-container a:hover {
-  font-size: 14px;
+  font-size: 16px;
   color: #1f4283;
   background-color: white;
 }
