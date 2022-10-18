@@ -54,41 +54,42 @@
   <div class="main">
     <div class="header">
       <h1>FSUTMS<sup>NG</sup></h1></div>
+      <h2>Model Tools</h2>
+      <h3>Trip Purposes</h3>
       <body>
 
-        <p>FSUTMS has been the fundamental paradigm within which travel demand modeling in Florida has been practiced for the past four decades. The principal aim of FSUTMS has been to achieve a consensus within the
-          Florida modeling community as to the tools, techniques, and datasets that should be employed in travel demand modeling. This approach has contributed greatly to the sense of professional community that
-          Florida’s travel demand modelers enjoy.</p>
-        <p>Although the origins of FSUTMS are in configuring a single piece of software for use on a single mainframe computer in Tallahassee four decades ago, modelers in Florida have continued to acknowledge, by
-          the constant support and development of FSUTMS over the years,that the benefits of FSUTMS extend far beyond that. These benefits have included:</p>
+        <p>In February 2020, the Model Task Force adopted the trip purposes prepared for FDOT as part of the process of developing standards for FSUTMS1. This document provides some needed specificity on guidelines for trip purposes and includes the following recommendations when developing trip purposes:</p>
         <ul>
-          <li>Making data acquisition for models relatively cheap and easy,</li>
-          <li>Streamlining the model development process,</li>
-          <li>Availability of a training program that allow modelers to work with any model in the state,</li>
+          <li>The models <b>need to produce the information needed for a variety of types of planning analyses</b>, and the models need to be sensitive to a number of factors to perform these analyses.</li>
+          <li><b>Changes from current practice should be as little as possible</b> and related only to what is necessary to perform the required analyses.</li>
+          <li>It is important to recognize that <b>travel behavior differs by trip purpose</b>, and differs substantially among some types of trip purposes.</li>
           <li>Increasing knowledge sharing making it easier to apply lessons learned from one model to another, and</li>
-          <li>Agreement on model quality standards.</li>
+          <li>Trip purpose segmentation <b>must be supported by the data available</b> for model development and validation.</li>
         </ul>
-        <p>As technological improvements in the field of travel demand modeling have increased significantly over the past two decades, different models in Florida have diverged from previously established standards. This has made it more difficult for modelers to take advantage of the benefits listed above. One example is that much of the material covered in the FSUTMS Comprehensive Modeling Workshop, which at one time was sufficient to allow any modeler to pick up and use any model in the state, is only relevant to certain models still adhering to traditional FSUTMS practices. Materials on more advanced topics that cover methods used in some of the state’s more sophisticated models are barely touched upon. It is time to revisit FSUTMS and update it to meet the needs of today’s transportation planners.</p>
         <br />
-        <h2>Site Contents</h2>
-        <h3>Data</h3>
-          <ul>
-            <li>Data Inputs & Categories</li>
-            <li>Data Repository & Management</li>
-            <li>Analytical Tools</li>
-          </ul>
-          <h3>Model Tools</h3>
-          <ul>
-            <li>Traditional Practices</li>
-            <li>Advanced Practices</li>
-            <li>Supplemental Practices</li>
-          </ul>
-          <h3>Interface</h3>
-          <ul>
-            <li>Institutional Support</li>
-            <li>Documentation</li>
-            <li>Presentation & Results Sharing</li>
-          </ul>
+        <h4>Guidance for Model Developers</h4>
+        <ul>
+          <li>Make sure that standard trip purposes are used in the model.</li>
+          <li>If deviations from the standard trip purposes are required, document why additional or fewer trip purposes are being proposed.</li>
+          <li>Ensure that there are sufficient observations in the household travel survey data to ensure that all the proposed purposes can be estimated, calibrated, and validated reasonably.</li>
+          <li>If the model accounts for other types of trips (freight, visitors, external, special generators, etc.) besides internal passenger trips, make sure that there is sufficient data to meet those needs.</li>
+          <li>Good practice to develop summary statistics from the survey data (both sample and population) by trip purpose to identify issues with sample being used for model estimation.</li>
+        </ul>
+        <br />
+        <h4>Guidance for Model Appliers</h4>
+        <ul>
+          <li>Make sure that the model has the standard trip purposes.</li>
+          <li>Since access to the underlying survey data might not be available, refer to the validation documentation to ensure that person trip tables by purpose are consistent with underlying data used for model estimation purposes.</li>
+          <li>Be aware of model limitations when the standard trip purposes are not used since any changes to the trip purpose definitions would require re-estimating and recalibrating/validating the model.</li>
+        </ul>
+        <br />
+        <h4>Guidance for Model Reviewers</h4>
+        <ul>
+          <li>Make sure that the proposed trip purposes are consistent with the standard trip purposes; if not, ensure that the reasons for having different trip purposes are justified.</li>
+          <ul><li>If it’s an entirely new model, make sure that the proposed trip purposes meet the analytical and policy needs of the model</li></ul>
+          <li>Make sure that the model has all the required/agreed upon trip purposes.</li>
+          <li>Check to ensure that the number of observations (weighted) by trip purpose are consistent with data sources such as National Household Travel Survey or other survey data (for all trips).</li>
+        </ul>
 </div>
 
   <!--  <div class="grid-container">
