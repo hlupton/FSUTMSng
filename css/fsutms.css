@@ -88,6 +88,12 @@ tr.last {
   border-bottom: 1px solid black;
 }
 
+footer {
+  margin-left: 280px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
