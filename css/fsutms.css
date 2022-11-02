@@ -12,6 +12,10 @@
   margin: auto;
 }
 
+a:hover {
+  font-style: bold;
+}
+
 h2 {
   font-family: "Montserrat", sans-serif;
   color: #1f4283;
@@ -51,6 +55,11 @@ body {
   padding-right: 70px;
   padding-bottom: 40px;
   padding-top: 10px;
+}
+
+svg {
+  transform: scale(0.5);
+  padding: 0px;
 }
 
 img {
